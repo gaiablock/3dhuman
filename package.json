@@ -1,0 +1,48 @@
+{
+  "name": "3dhuman",
+  "version": "1.0.0-RC1",
+  "description": "Real-time scientific human health and performance analysis",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "browserify -t glslify src/index.js -o public/js/main.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Dsensor/3dhuman.git"
+  },
+  "keywords": [
+    "sensor",
+    "wearable",
+    "scientific",
+    "human",
+    "performance",
+    "health",
+    "analysis",
+    "real-time",
+    "visualization",
+    "3D"
+  ],
+  "author": "Dsensor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dsensor/3dhuman/issues"
+  },
+  "homepage": "https://github.com/Dsensor/3dhuman",
+  "dependencies": {
+    "gl-mat4": "^1.1.4",
+    "gl-shader": "^4.0.4",
+    "lookat-camera": "~1.0.0",
+    "gl-vao": "~1.2.1",
+    "gl-buffer": "~2.1.2",
+    "gl-now": "~1.4.0",
+    "signed-distance": "0.0.3",
+    "normals": "~1.0.1",
+    "spatial-grid": "~0.1.1",
+    "tween.js": "~16.3.4"
+  },
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "glslify": "^2.1.2"
+  }
+}
